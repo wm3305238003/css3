@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<script type="text/javascript">
+           /*var arr=[112,6,3,77,33,11,4];
+           arr.sort(function(a,b){return a-b});
+           alert(arr.toString());*/
+          
+          
+          function sortNumber(a,b){
+                return a-b
+          }
+			var arr = new Array(6)
+			arr[0] = "10"
+			arr[1] = "5"
+			arr[2] = "40"
+			arr[3] = "25"
+			arr[4] = "1000"
+			arr[5] = "1"
+
+			document.write(arr + "<br />");
+			document.write(arr.sort(sortNumber));
+			
+			
+			/*function swap(myArray, p1, p2) {
+            var temp = myArray[p1];
+            myArray[p1] = myArray[p2];
+            myArray[p2] = temp;
+        }
+        function bubbleSort(myArray) {
+            var len = myArray.length;
+            var i;
+            var j;
+            var stop;
+
+            for (i = 0; i < len - 1; i++) {
+                for (j = 0, stop = len - 1 - i; j < stop; j++) {
+                    if (myArray[j] > myArray[j + 1]) {
+                        swap(myArray, j, j + 1);
+                    }
+                }
+            }
+            return myArray;
+        }*/
+       
+       
+       /*function sort(){
+       	int arr[]={2,5,6,8,4,7};
+       	for(int i=0;i<arr.length-1;i++){
+       		for(int j=0;j<arr.length-i-1;j++){
+       			if(arr[j]>arr[j+1]){
+       				int temp=a[j];
+       				a[j]=a[j+1];
+       				a[j+1]=temp;
+       			}
+       		}
+       	}
+       	for (int i = 0; i < arra.Length;i++ )
+            {
+                Console.WriteLine(arr[i]);
+                
+            }
+       }*/
+        </script>
+	</head>
+	<body>
+	</body>
+</html>

@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>css3动画-旋转</title>
+		<style>
+			#spainer {
+		        position: absolute;
+		        top: 50%;
+		        left: 50%;
+       		}
+       		#three{
+       			position: relative;
+       			width: 30px;
+       			height:30px;
+       			background-color:red;
+       			border-radius:50px;
+       			-webkit-animation: three 1.5s infinite linear;
+       			-moz-animation: three 1.5s infinite linear;
+       			-ms-animation: three 1.5s infinite linear;
+       			animation: three 1.5 infinite linear;
+       		}
+       		#three:after{
+       			position:absolute;
+       			width:50px;
+       			height:50px;
+       			border-top:10px solid aquamarine;
+       			border-bottom: 10px solid orchid;
+       			border-left:10px solid transparent;
+       			border-right: 10px solid transparent;
+       			border-radius: 50px;
+       			content: '';
+       			top:-20px;
+       			left:-20px;
+       			-webkit-animation:three:after 1.5s infinite linear;
+       			-moz-animation: three:after 1.5s infinite linear;
+       			-ms-animation: three:after 1.5s infinite linear;
+       			animation: three:after 1.5 infinite linear;
+       		}
+       		
+       		@-webkit-keyframes three{
+       			0%{
+       				-webkit-transform: rotate(0deg);
+       			}
+       			50%{
+       				-webkit-transform: rotate(180deg);
+       				background-color: #FFEBCD;
+       			}
+       			100%{
+       				-webkit-transform:rotate(360deg);
+       			}
+       		}
+       		@-webkit-keyframes three_after{
+       			0%{
+       				border-top: 10px solid greenyellow;
+       				border-bottom: 10px solid greenyellow;
+       			}
+       			50%{
+       				border-top: 10px solid deepskyblue;
+       				border-bottom: 10px solid deepskyblue ;
+       			}
+       			100%{
+       				border-top: 10px solid greenyellow;
+       				border-bottom: 10px solid greenyellow;
+       			}
+       		}
+       		
+       		@-moz-keyframes three{
+                 0%{
+       				-webkit-transform: rotate(0deg);
+       			}
+       			50%{
+       				-webkit-transform: rotate(180deg);
+       				background-color: #FFEBCD;
+       			}
+       			100%{
+       				-webkit-transform:rotate(360deg);
+       			}
+       		}
+       		@-moz-keyframes three_after{
+       			0%{
+       				border-top: 10px solid greenyellow;
+       				border-bottom: 10px solid greenyellow;
+       			}
+       			50%{
+       				border-top: 10px solid deepskyblue;
+       				border-bottom: 10px solid deepskyblue ;
+       			}
+       			100%{
+       				border-top: 10px solid greenyellow;
+       				border-bottom: 10px solid greenyellow;
+       			}
+       		}
+       		
+       		@-ms-keyframes three{
+       			0%{
+       				-webkit-transform: rotate(0deg);
+       			}
+       			50%{
+       				-webkit-transform: rotate(180deg);
+       				background-color: #FFEBCD;
+       			}
+       			100%{
+       				-webkit-transform:rotate(360deg);
+       			}
+       		}
+       		@-ms-keyframes three_after{
+       			0%{
+       				border-top: 10px solid greenyellow;
+       				border-bottom: 10px solid greenyellow;
+       			}
+       			50%{
+       				border-top: 10px solid deepskyblue;
+       				border-bottom: 10px solid deepskyblue ;
+       			}
+       			100%{
+       				border-top: 10px solid greenyellow;
+       				border-bottom: 10px solid greenyellow;
+       			}
+       		}
+       		
+       		@keyframes three{
+       			0%{
+       				-webkit-transform: rotate(0deg);
+       			}
+       			50%{
+       				-webkit-transform: rotate(180deg);
+       				background-color: #FFEBCD;
+       			}
+       			100%{
+       				-webkit-transform:rotate(360deg);
+       			}
+       		}
+       		@keyframes three_after{
+       			0%{
+       				border-top: 10px solid greenyellow;
+       				border-bottom: 10px solid greenyellow;
+       			}
+       			50%{
+       				border-top: 10px solid deepskyblue;
+       				border-bottom: 10px solid deepskyblue ;
+       			}
+       			100%{
+       				border-top: 10px solid greenyellow;
+       				border-bottom: 10px solid greenyellow;
+       			}
+       		}
+		</style>
+	</head>
+	<body id="spainer">
+		<div id="three">
+			<span></span>
+			<span></span>
+			<span></span>
+			<span></span>
+		</div>
+	</body>
+</html>

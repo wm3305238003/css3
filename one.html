@@ -1,0 +1,169 @@
+<!DOCTYPE html><html>
+	<head>
+	  <meta charset="utf-8" />
+	  <title>css3动画-音频波形柱子</title>
+	  <style>
+	  	#spainer {
+	        position: absolute;
+	        top: 50%;
+	        left: 50%;
+       }
+       
+		#one {
+			position: relative;
+		}
+		
+		#one span {
+			display: block;
+			bottom: 0px;
+			width: 9px;
+			height: 5px;
+			background-color:papayawhip;
+			position: absolute;
+			-webkit-animation: one 1.5s infinite ease-in-out;
+			-moz-animation: one 1.5s infinite ease-in-out;
+			-ms-animation: one 1.5s infinite ease-in-out;
+			-o-animation: one 1.5s infinite ease-in-out;
+			animation: one 1.5s infinite ease-in-out;
+		}
+
+		#one span:nth-child(2) {
+			left: 11px;
+			-webkit-animation-delay: .2s;
+			-moz-animation-delay: .2s;
+			-ms-animation-delay: .2s;
+			-o-animation-delay: .2s;
+			animation-delay: .2s;
+		}
+
+		#one span:nth-child(3) {
+			left: 22px;
+			-webkit-animation-delay: .4s;
+			-moz-animation-delay: .4s;
+			-ms-animation-delay: .4s;
+			-o-animation-delay: .4s;
+			animation-delay: .4s;
+		}
+
+		#one span:nth-child(4) {
+			left: 33px;
+			-webkit-animation-delay: .6s;
+			-moz-animation-delay: .6s;
+			-ms-animation-delay: .6s;
+			-o-animation-delay: .6s;
+			animation-delay: .6s;
+		}
+
+		#one span:nth-child(5) {
+			left: 44px;
+			-webkit-animation-delay: .8s;
+			-moz-animation-delay: .8s;
+			-ms-animation-delay: .8s;
+			-o-animation-delay: .8s;
+			animation-delay: .8s;
+		}
+
+		@-webkit-keyframes one {
+			0% {
+				height: 5px;
+				-webkit-transform: translateY(0px);
+				background-color:palevioletred ;
+			}
+			25% {
+				height: 30px;
+				-webkit-transform: translateY(15px);
+				background-color:deepskyblue;
+			}
+			50% {
+				height: 5px;
+				-webkit-transform: translateY(0px);
+				background-color:chartreuse;
+			}
+		    100% {
+				height: 5px;
+				-webkit-transform: translateY(0px);
+				background-color:gold;
+		}
+	}
+
+		@-moz-keyframes one {
+			0% {
+				height: 5px;
+				-webkit-transform: translateY(0px);
+				background-color:palevioletred ;
+			}
+			25% {
+				height: 30px;
+				-webkit-transform: translateY(15px);
+				background-color:deepskyblue;
+			}
+			50% {
+				height: 5px;
+				-webkit-transform: translateY(0px);
+				background-color:chartreuse;
+			}
+		    100% { 
+				height: 5px;
+				-webkit-transform: translateY(0px);
+				background-color:gold;
+		    }
+		}
+		
+		@-ms-keyframes one {
+			0% {
+				height: 5px;
+				-webkit-transform: translateY(0px);
+				background-color:palevioletred ;
+			}
+			25% {
+				height: 30px;
+				-webkit-transform: translateY(15px);
+				background-color:deepskyblue;
+			}
+			50% {
+				height: 5px;
+				-webkit-transform: translateY(0px);
+				background-color:chartreuse;
+			}
+		    100% {
+				height: 5px;
+				-webkit-transform: translateY(0px);
+				background-color:gold;
+		    }
+		}
+		
+		@keyframes one {
+			0% {
+				height: 5px;
+				-webkit-transform: translateY(0px);
+				background-color:palevioletred ;
+			}
+			25% {
+				height: 30px;
+				-webkit-transform: translateY(15px);
+				background-color:deepskyblue;
+			}
+			50% {
+				height: 5px;
+				-webkit-transform: translateY(0px);
+				background-color:chartreuse;
+			}
+			100% {
+				height: 5px;
+				-webkit-transform: translateY(0px);
+				background-color:gold;
+			}
+		}
+</style>
+</head>
+<body id="spainer">
+	<div id="one">
+		<span></span>
+		<span></span>
+		<span></span>
+		<span></span>
+		<span></span>
+	</div>
+</body>
+
+</html>
